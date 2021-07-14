@@ -178,3 +178,24 @@ footer {
 .copyright {
   font-size: 18px;
 }
+
+/* ----------------
+media query
+-------------------- */
+/* mobile devises */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+  }
+}
